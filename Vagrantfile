@@ -41,7 +41,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # argument is a set of non-required options.
   config.vm.synced_folder "src", "/home/vagrant/src"
 
-  config.vm.provision "shell", path: "bootstrap.sh", privileged: true, binary: false
+  config.vm.provision "shell", path: "bootstrap-vagrant.sh", privileged: true, binary: false
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
